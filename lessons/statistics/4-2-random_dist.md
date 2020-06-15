@@ -1,3 +1,19 @@
 [Think Stats Chapter 4 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2005.html#toc41) (a random distribution)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+t = np.random.random(1000)
+
+pmf = thinkstats2.Pmf(t)
+thinkplot.Pmf(pmf,linewidth=0.1)
+thinkplot.Config(xlabel='RANDOM NUMBERS', ylabel='PMF')
+
+The pmf plot looks like a barcode which is hard to interpret to any useful resources
+
+
+
+
+cdf = thinkstats2.Cdf(t)
+thinkplot.Cdf(cdf)
+thinkplot.Config(xlabel='Random Numbers', ylabel = 'CDF')
+
+This cdf plot shows us the slope for all the random numbers is almost equal to one which proofs that random.random is uniformly distributed
