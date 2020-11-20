@@ -1,6 +1,9 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
->>(BiasPmf function)
+For this question, I will use the BiasPmf function to find out the differences between actual distributions and the biased distribution of NUMDKHH 
+(How many numbers for each children in their household)
+
+
 
 def BiasPmf(pmf, label):
     new_pmf = pmf.Copy(label=label)
@@ -10,9 +13,6 @@ def BiasPmf(pmf, label):
         
     new_pmf.Normalize()
     return new_pmf
-    
-Use the function to find out the differences between actual distributions and the biased distribution of NUMDKHH 
-(How many numbers for each children in their household)
     
     resp = nsfg.ReadFemResp()
     d = resp.numkdhh
@@ -28,4 +28,4 @@ Use the function to find out the differences between actual distributions and th
     Observed mean 2.461860525971477
     
 Because there are a higher possibility for us to reach a child with a larger number of household,
-therefore, we have to multiply the number of students who observed that class size
+therefore, we have to multiply the number of students who observed that class size. 
