@@ -21,8 +21,12 @@ For this question, I will use the BiasPmf function to find out the differences b
     thinkplot.PrePlot(2)
     thinkplot.Pmfs([pmf, biased_pmf])
     thinkplot.Config(xlabel='Number of Children', ylabel='PMF')
+    plt.legend()
+    
     print('Actual mean', pmf.Mean())
     print('Observed mean', biased_pmf.Mean())
+    
+    
     
     Actual mean 1.024205155043831
     Observed mean 2.461860525971477
